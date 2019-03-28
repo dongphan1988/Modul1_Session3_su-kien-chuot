@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+<img id="myImage" src="images.jpeg" style="position: relative; left: 0;" height="200" width="170"/>
+    <p>Click left or right me to fight</p>
+</form>
+<input type="button" onclick="moveLeft()" value="move left"/>
+<input type="button" onclick="moveRight()" value="move right"/>
+<script>
+    function moveLeft() {
+        let imaGe = document.getElementById("myImage");
+        imaGe.style.left = parseInt(imaGe.style.left) - 5 + "px";
+    }
+
+    function moveRight() {
+        let imaGe = document.getElementById("myImage");
+        imaGe.style.left = parseInt(imaGe.style.left) + 5 + "px";
+    }
+</script>
+</body>
+</html>
